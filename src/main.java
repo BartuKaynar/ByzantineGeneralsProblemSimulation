@@ -56,11 +56,11 @@ public class main {
     }
 
     public static void getInfo(General gn, ArrayList<Lieutenant> lts){
-        System.out.println("General is traitor: " + gn.toString());
+        System.out.println("General is " + gn.toString());
         int retreat = 0;
         int attack = 0;
         for(int i = 0; i < lts.size(); i++){
-            System.out.println("Lieutenant "+(1+i)+" is "+lts.get(i).toString());
+            System.out.println("Lieutenant"+(1+i)+"'s messager is "+lts.get(i).toString());
             if(lts.get(i).isAttack()){
                 attack++;
             }else{
